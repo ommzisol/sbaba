@@ -67,7 +67,7 @@ export function LanguageSelector() {
                   onClick={() => handleChange(option.code)}
                   className={`flex w-full items-center justify-between px-4 py-3 text-left text-[0.98rem] transition ${
                     active
-                      ? "bg-[#0859a5] text-white"
+                      ? "bg-[#8f1d2c] text-white"
                       : "text-slate-800 hover:bg-slate-50"
                   }`}
                   role="option"

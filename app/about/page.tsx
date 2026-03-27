@@ -8,7 +8,7 @@ export default function AboutPage() {
       <main className="bg-[linear-gradient(180deg,#eef4fb_0%,#ffffff_100%)]">
         <section className="mx-auto max-w-5xl px-4 py-14 lg:px-8 lg:py-16">
           <div className="rounded-[2.2rem] border border-slate-200 bg-white p-7 shadow-[0_24px_55px_rgba(148,163,184,0.16)] lg:p-9">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#0b7b78]">About Us</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#8f1d2c]">About Us</p>
 
             <div className="mt-5 flex justify-start">
               <div className="max-w-[18rem]">
@@ -69,19 +69,19 @@ export default function AboutPage() {
 
             <div className="mt-10 grid gap-6 lg:grid-cols-3">
               <div className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0859a5]">Coverage</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">Coverage</p>
                 <p className="mt-3 text-lg font-semibold text-slate-950">
                   Steel, metal, finished market, raw material, agriculture, and food-linked market updates.
                 </p>
               </div>
               <div className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0859a5]">Delivery</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">Delivery</p>
                 <p className="mt-3 text-lg font-semibold text-slate-950">
                   Web portal, mobile application, text message alerts, WhatsApp updates, and social media channels.
                 </p>
               </div>
               <div className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0859a5]">Purpose</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">Purpose</p>
                 <p className="mt-3 text-lg font-semibold text-slate-950">
                   To help businesses make faster and better-informed decisions through dependable market visibility.
                 </p>
@@ -101,7 +101,7 @@ export default function AboutPage() {
                 </div>
 
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">CEO Message</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-200">CEO Message</p>
                   <h2 className="mt-4 text-[1.9rem] font-semibold tracking-[-0.035em] [font-family:var(--font-display)] lg:text-[2.35rem]">
                     A message from leadership
                   </h2>

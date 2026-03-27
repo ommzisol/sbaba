@@ -19,14 +19,14 @@ function BrandMark({ compact = false, dark = false }: { compact?: boolean; dark?
   if (compact) {
     return (
       <div className="inline-flex items-center gap-3 rounded-[1.4rem] border border-[#d8e2ea] bg-white px-3 py-2 shadow-[0_12px_28px_rgba(15,23,42,0.08)]">
-        <div className="flex h-[3.25rem] w-[3.25rem] items-center justify-center rounded-[1rem] bg-[linear-gradient(135deg,#17354d_0%,#25567a_52%,#5d89a8_100%)] text-[1.45rem] font-black tracking-[-0.08em] text-white shadow-[0_14px_28px_rgba(37,86,122,0.28)]">
+        <div className="flex h-[3.25rem] w-[3.25rem] items-center justify-center rounded-[1rem] bg-[linear-gradient(135deg,#4a0d16_0%,#8f1d2c_52%,#c45a68_100%)] text-[1.45rem] font-black tracking-[-0.08em] text-white shadow-[0_14px_28px_rgba(143,29,44,0.3)]">
           SB
         </div>
         <div className="leading-none">
-          <div className="text-[1.3rem] font-black uppercase tracking-[-0.05em] text-[#17354d]">
+          <div className="text-[1.3rem] font-black uppercase tracking-[-0.05em] text-[#4a0d16]">
             Steel
           </div>
-          <div className="mt-1 text-[0.72rem] font-bold uppercase tracking-[0.32em] text-[#5d89a8]">
+          <div className="mt-1 text-[0.72rem] font-bold uppercase tracking-[0.32em] text-[#a73b49]">
             Baba
           </div>
         </div>
@@ -54,7 +54,7 @@ function BrandMark({ compact = false, dark = false }: { compact?: boolean; dark?
       <div
         className={`relative flex items-center justify-center rounded-[1.65rem] ${
           compact ? "h-[4.2rem] w-[4.2rem]" : "h-[5rem] w-[5rem]"
-        } bg-[linear-gradient(135deg,#17354d_0%,#25567a_52%,#5d89a8_100%)] shadow-[0_20px_45px_rgba(37,86,122,0.22)]`}
+        } bg-[linear-gradient(135deg,#4a0d16_0%,#8f1d2c_52%,#c45a68_100%)] shadow-[0_20px_45px_rgba(143,29,44,0.24)]`}
       >
         <div className="absolute inset-[3px] rounded-[1.45rem] border border-white/20" />
         <div className="absolute -left-1 top-[1.15rem] h-[0.7rem] w-[2.7rem] rotate-[-14deg] rounded-full bg-[#9fb7c8] shadow-[0_10px_20px_rgba(159,183,200,0.35)]" />
@@ -71,14 +71,14 @@ function BrandMark({ compact = false, dark = false }: { compact?: boolean; dark?
         <div
           className={`font-black uppercase leading-none tracking-[-0.05em] ${
             compact ? "text-[1.55rem]" : "text-[1.95rem]"
-          } ${dark ? "text-white" : "text-[#17354d]"}`}
+          } ${dark ? "text-white" : "text-[#4a0d16]"}`}
         >
           Steel
         </div>
         <div
           className={`mt-1 font-semibold uppercase tracking-[0.34em] ${
             compact ? "text-[0.68rem]" : "text-[0.78rem]"
-          } ${dark ? "text-[#d9e5ef]" : "text-[#5d89a8]"}`}
+          } ${dark ? "text-[#f0d7dc]" : "text-[#a73b49]"}`}
         >
           Baba
         </div>
@@ -250,7 +250,7 @@ export function SiteShell({ children }: SiteShellProps) {
   return (
     <div className="min-h-screen bg-slate-100 text-slate-900">
       <header className="sticky top-0 z-50">
-        <div className="bg-[#17354d] text-[#cfdae4]">
+        <div className="bg-[#4a0d16] text-[#f0d7dc]">
           <div className="mx-auto flex max-w-[1920px] flex-wrap items-center justify-between gap-4 px-6 py-3 lg:px-12">
             <div className="flex flex-wrap items-center gap-6 text-[0.95rem] md:gap-10">
               <a href={SUPPORT_MAILTO} className="transition hover:text-white">
@@ -265,7 +265,7 @@ export function SiteShell({ children }: SiteShellProps) {
               <div className="flex items-center gap-3 text-sm font-semibold">
                 <Link
                   href="/login"
-                  className="rounded-md border border-[#7897ad] px-4 py-2 text-[#d9e5ef] transition hover:border-white hover:text-white"
+                className="rounded-md border border-[#d5969f] px-4 py-2 text-[#f6dde1] transition hover:border-white hover:text-white"
                 >
                   {t("header.login")}
                 </Link>
@@ -282,7 +282,7 @@ export function SiteShell({ children }: SiteShellProps) {
                   href="https://www.facebook.com/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-white transition hover:text-[#d7e4f7]"
+                  className="text-white transition hover:text-[#f8dde1]"
                   aria-label="Facebook"
                 >
                   <SocialIcon kind="facebook" />
@@ -291,7 +291,7 @@ export function SiteShell({ children }: SiteShellProps) {
                   href="https://www.linkedin.com/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-white transition hover:text-[#d7e4f7]"
+                  className="text-white transition hover:text-[#f8dde1]"
                   aria-label="LinkedIn"
                 >
                   <SocialIcon kind="linkedin" />
@@ -300,7 +300,7 @@ export function SiteShell({ children }: SiteShellProps) {
                   href="https://www.blogger.com/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-white transition hover:text-[#d7e4f7]"
+                  className="text-white transition hover:text-[#f8dde1]"
                   aria-label="Blogger"
                 >
                   <SocialIcon kind="blogger" />
@@ -309,7 +309,7 @@ export function SiteShell({ children }: SiteShellProps) {
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-white transition hover:text-[#d7e4f7]"
+                  className="text-white transition hover:text-[#f8dde1]"
                   aria-label="Instagram"
                 >
                   <SocialIcon kind="instagram" />
@@ -318,7 +318,7 @@ export function SiteShell({ children }: SiteShellProps) {
                   href="https://x.com/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-white transition hover:text-[#d7e4f7]"
+                  className="text-white transition hover:text-[#f8dde1]"
                   aria-label="X"
                 >
                   <SocialIcon kind="x" />
@@ -337,28 +337,28 @@ export function SiteShell({ children }: SiteShellProps) {
             </Link>
 
             <nav className="flex flex-1 flex-wrap items-center justify-center gap-x-7 gap-y-3 text-[0.95rem] font-semibold text-[#2d3c5c]">
-              <Link href="/about" className="transition hover:text-[#25567a]">
+              <Link href="/about" className="transition hover:text-[#8f1d2c]">
                 {t("nav.about")}
               </Link>
-              <Link href="/products" className="transition hover:text-[#25567a]">
+              <Link href="/products" className="transition hover:text-[#8f1d2c]">
                 {t("nav.products")}
               </Link>
-              <Link href="/service" className="transition hover:text-[#25567a]">
+              <Link href="/service" className="transition hover:text-[#8f1d2c]">
                 Service
               </Link>
-              <Link href="/steel-price" className="transition hover:text-[#25567a]">
+              <Link href="/steel-price" className="transition hover:text-[#8f1d2c]">
                 {t("nav.steelPrice")}
               </Link>
-              <Link href="/applications" className="transition hover:text-[#25567a]">
+              <Link href="/applications" className="transition hover:text-[#8f1d2c]">
                 {t("nav.applications")}
               </Link>
-              <a href="/#news" className="transition hover:text-[#25567a]">
+              <a href="/#news" className="transition hover:text-[#8f1d2c]">
                 {t("nav.news")}
               </a>
-              <Link href="/segments" className="transition hover:text-[#25567a]">
+              <Link href="/segments" className="transition hover:text-[#8f1d2c]">
                 {t("nav.segments")}
               </Link>
-              <Link href="/media" className="transition hover:text-[#25567a]">
+              <Link href="/media" className="transition hover:text-[#8f1d2c]">
                 {t("nav.media")}
               </Link>
             </nav>
@@ -366,13 +366,13 @@ export function SiteShell({ children }: SiteShellProps) {
             <div className="flex flex-wrap items-center gap-3">
               <Link
                 href="/request-demo"
-                className="rounded-xl bg-[#4f6f86] px-5 py-3 text-[0.95rem] font-semibold text-white transition hover:bg-[#3f5d73]"
+                className="rounded-xl bg-[#6f2330] px-5 py-3 text-[0.95rem] font-semibold text-white transition hover:bg-[#5b1925]"
               >
                 Request for Demo
               </Link>
               <Link
                 href="/contact"
-                className="rounded-xl bg-[#25567a] px-6 py-3 text-[0.95rem] font-semibold text-white transition hover:bg-[#17354d]"
+                className="rounded-xl bg-[#8f1d2c] px-6 py-3 text-[0.95rem] font-semibold text-white transition hover:bg-[#4a0d16]"
               >
                 {t("header.contact")}
               </Link>
@@ -383,12 +383,12 @@ export function SiteShell({ children }: SiteShellProps) {
 
       <div>{children}</div>
 
-      <section className="bg-[linear-gradient(180deg,#eef3f6_0%,#e0e8ee_100%)]">
+      <section className="bg-[linear-gradient(180deg,#f7eff1_0%,#edd9de_100%)]">
         <div className="mx-auto max-w-[1660px] px-6 py-6 lg:px-12 lg:py-7">
           <div className="rounded-[1.6rem] border border-slate-200 bg-white px-5 py-5 shadow-[0_18px_45px_rgba(148,163,184,0.12)]">
             <div className="grid gap-5 xl:grid-cols-[1.1fr_0.9fr] xl:items-center">
               <div>
-                <p className="text-[0.75rem] font-semibold uppercase tracking-[0.24em] text-[#25567a]">Applications and Trust</p>
+                <p className="text-[0.75rem] font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">Applications and Trust</p>
                 <h3 className="mt-2 text-[1.15rem] font-bold text-slate-950">Download apps and view trusted payment badges before the footer</h3>
                 <p className="mt-2 text-[0.875rem] leading-7 text-slate-600">
                   Access Steel Baba across iOS, Android, and Windows, and see platform trust and payment verification badges in one highlighted section.
@@ -399,9 +399,9 @@ export function SiteShell({ children }: SiteShellProps) {
                 <div className="flex flex-wrap gap-2">
                   <a
                     href="/applications"
-                    className="flex min-w-[10.2rem] items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-2.5 transition hover:border-[#25567a] hover:bg-white"
+                    className="flex min-w-[10.2rem] items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-2.5 transition hover:border-[#8f1d2c] hover:bg-white"
                   >
-                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#25567a] text-white">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#8f1d2c] text-white">
                       <AppPlatformIcon kind="ios" />
                     </div>
                     <div>
@@ -411,9 +411,9 @@ export function SiteShell({ children }: SiteShellProps) {
                   </a>
                   <a
                     href="/applications"
-                    className="flex min-w-[10.2rem] items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-2.5 transition hover:border-[#25567a] hover:bg-white"
+                    className="flex min-w-[10.2rem] items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-2.5 transition hover:border-[#8f1d2c] hover:bg-white"
                   >
-                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#25567a] text-white">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#8f1d2c] text-white">
                       <AppPlatformIcon kind="android" />
                     </div>
                     <div>
@@ -423,9 +423,9 @@ export function SiteShell({ children }: SiteShellProps) {
                   </a>
                   <a
                     href="/applications"
-                    className="flex min-w-[10.2rem] items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-2.5 transition hover:border-[#25567a] hover:bg-white"
+                    className="flex min-w-[10.2rem] items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-2.5 transition hover:border-[#8f1d2c] hover:bg-white"
                   >
-                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#25567a] text-white">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#8f1d2c] text-white">
                       <AppPlatformIcon kind="windows" />
                     </div>
                     <div>
@@ -450,7 +450,7 @@ export function SiteShell({ children }: SiteShellProps) {
         </div>
       </section>
 
-      <footer className="relative mt-6 overflow-hidden bg-[#324554] text-[#d4e0e8]">
+      <footer className="relative mt-6 overflow-hidden bg-[#32131a] text-[#f1d6db]">
         <div className="mx-auto max-w-[1660px] px-6 py-14 lg:px-12 lg:py-16">
           <div className="grid gap-10 xl:grid-cols-[1.65fr_0.75fr_0.75fr_0.75fr_0.9fr]">
             <div className="max-w-[34rem]">
@@ -637,7 +637,7 @@ export function SiteShell({ children }: SiteShellProps) {
             <div className="pointer-events-auto w-[20rem] rounded-[1.5rem] border border-slate-200 bg-white p-4 text-slate-900 shadow-[0_18px_50px_rgba(15,23,42,0.18)]">
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#25567a]">Live Support</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8f1d2c]">Live Support</p>
                   <h3 className="mt-1 text-lg font-bold text-slate-950">Steel Baba Chat</h3>
                 </div>
                 <button
@@ -664,19 +664,19 @@ export function SiteShell({ children }: SiteShellProps) {
                 </a>
                 <a
                   href="/contact"
-                  className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#25567a] hover:text-[#25567a]"
+                  className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                 >
                   Contact Support Team
                 </a>
                 <a
                   href={SUPPORT_TEL}
-                  className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#25567a] hover:text-[#25567a]"
+                  className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                 >
                   Call {SUPPORT_PHONE}
                 </a>
                 <a
                   href={`mailto:${SUPPORT_EMAIL}?subject=Steel%20Baba%20Support`}
-                  className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#25567a] hover:text-[#25567a]"
+                  className="rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                 >
                   Email Support
                 </a>
@@ -696,7 +696,7 @@ export function SiteShell({ children }: SiteShellProps) {
           <button
             type="button"
             onClick={() => setChatOpen((value) => !value)}
-            className="pointer-events-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#25567a] text-white shadow-xl transition hover:scale-105"
+            className="pointer-events-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#8f1d2c] text-white shadow-xl transition hover:scale-105"
             aria-label="Chat"
           >
             <ChatIcon />

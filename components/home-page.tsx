@@ -119,8 +119,8 @@ function HeroGraph() {
           </div>
 
           <div className="mt-5 grid gap-3 sm:grid-cols-3">
-            <div className="rounded-2xl bg-[linear-gradient(135deg,rgba(59,130,246,0.16),rgba(34,211,238,0.08))] px-4 py-3 ring-1 ring-cyan-300/10">
-              <p className="text-xs uppercase tracking-[0.24em] text-cyan-200">Highest</p>
+            <div className="rounded-2xl bg-[linear-gradient(135deg,rgba(143,29,44,0.18),rgba(196,90,104,0.08))] px-4 py-3 ring-1 ring-[#c45a68]/10">
+              <p className="text-xs uppercase tracking-[0.24em] text-rose-100">Highest</p>
               <p className="mt-2 text-lg font-bold text-white">Rs. 49,500</p>
             </div>
             <div className="rounded-2xl bg-[linear-gradient(135deg,rgba(139,92,246,0.16),rgba(244,114,182,0.08))] px-4 py-3 ring-1 ring-violet-300/10">
@@ -257,7 +257,7 @@ export function HomePage() {
     <SiteShell>
       <section className="bg-white">
         <div className="grid min-h-[22rem] lg:grid-cols-[1.05fr_1fr]">
-          <div className="flex items-center bg-[linear-gradient(135deg,#17354d_0%,#25567a_55%,#5d89a8_100%)] px-8 py-12 lg:px-16">
+          <div className="flex items-center bg-[linear-gradient(135deg,#4a0d16_0%,#8f1d2c_55%,#c45a68_100%)] px-8 py-12 lg:px-16">
             <div className="max-w-[44rem]">
               <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm font-semibold tracking-[0.16em] text-[#d9e8fb]">
                 {t("hero.badge")}
@@ -271,7 +271,7 @@ export function HomePage() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
                   href="/#pricing"
-                  className="rounded-md bg-white px-6 py-3 font-semibold text-[#17354d] transition hover:bg-[#dbe5ec]"
+                  className="rounded-md bg-white px-6 py-3 font-semibold text-[#4a0d16] transition hover:bg-[#f2dde1]"
                 >
                   {t("hero.ctaRates")}
                 </Link>
@@ -341,7 +341,7 @@ export function HomePage() {
         <div className="rounded-[2rem] bg-white p-6 shadow-panel ring-1 ring-slate-200">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-teal-700">MS Billet Rate View</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8f1d2c]">MS Billet Rate View</p>
               <h2 className="mt-3 text-3xl font-bold text-slate-950">
                 MS Billet Price (INR/Ton) with city-wise market movement and trend graph
               </h2>
@@ -379,7 +379,7 @@ export function HomePage() {
                 placeholder="Search by city or MS Billet"
                 value={searchTerm}
                 onChange={(event) => setSearchTerm(event.target.value)}
-                className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-teal-500 focus:bg-white"
+                className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-[#8f1d2c] focus:bg-white"
               />
             </label>
             <label className="block">
@@ -387,7 +387,7 @@ export function HomePage() {
               <select
                 value={selectedCity}
                 onChange={(event) => setSelectedCity(event.target.value)}
-                className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-teal-500 focus:bg-white"
+                className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-[#8f1d2c] focus:bg-white"
               >
                 <option value="all">All Cities</option>
                 {cityOptions.map((city) => (
@@ -402,7 +402,7 @@ export function HomePage() {
               <select
                 value={sortBy}
                 onChange={(event) => setSortBy(event.target.value)}
-                className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-teal-500 focus:bg-white"
+                className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-[#8f1d2c] focus:bg-white"
               >
                 <option value="product">City Name</option>
                 <option value="city">City</option>
@@ -502,7 +502,7 @@ export function HomePage() {
         <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-panel">
           <div className="mb-6 flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-5">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0859a5]">News Filters</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">News Filters</p>
               <p className="mt-2 text-sm text-slate-500">Filter steel news by category just like a business news portal.</p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -516,8 +516,8 @@ export function HomePage() {
                     onClick={() => setNewsFilter(category)}
                     className={
                       active
-                        ? "rounded-full bg-[#0859a5] px-4 py-2 text-sm font-semibold text-white"
-                        : "rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                        ? "rounded-full bg-[#8f1d2c] px-4 py-2 text-sm font-semibold text-white"
+                        : "rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                     }
                   >
                     {category}
@@ -530,7 +530,7 @@ export function HomePage() {
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
             <article className="border-b border-slate-200 pb-6 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-8">
               <div className="flex flex-wrap items-center gap-3">
-                <span className="rounded-full bg-[#0859a5]/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.24em] text-[#0859a5]">
+                <span className="rounded-full bg-[#8f1d2c]/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.24em] text-[#8f1d2c]">
                   Top Story
                 </span>
                 <span className="text-sm font-medium text-slate-500">Economic desk style coverage</span>
@@ -575,7 +575,7 @@ export function HomePage() {
                   className="rounded-[1.5rem] border border-slate-200 bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-lg"
                 >
                   <div className="flex flex-wrap items-center justify-between gap-3">
-                    <span className="text-xs font-bold uppercase tracking-[0.24em] text-[#0859a5]">
+                    <span className="text-xs font-bold uppercase tracking-[0.24em] text-[#8f1d2c]">
                       {item.category}
                     </span>
                     <span
@@ -598,7 +598,7 @@ export function HomePage() {
                     <span className="text-slate-500">{item.time}</span>
                     <Link
                       href={`/news/${item.slug}`}
-                      className="font-semibold text-[#0859a5] transition hover:text-[#063f76]"
+                      className="font-semibold text-[#8f1d2c] transition hover:text-[#5b1925]"
                     >
                       Read full story
                     </Link>
@@ -608,11 +608,11 @@ export function HomePage() {
                       title={item.title}
                       text={item.summary}
                       url={`/news/${item.slug}`}
-                      className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                      className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                     />
                     <button
                       type="button"
-                      className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                      className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                     >
                       Comment {item.comments}
                     </button>
@@ -700,8 +700,8 @@ export function HomePage() {
       <section className="bg-[linear-gradient(180deg,#eef3fa_0%,#e8edf6_100%)]">
         <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8 lg:py-16">
           <div className="mb-8 max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#25567a]">{t("faq.badge")}</p>
-            <h2 className="mt-3 max-w-4xl text-[1.3rem] font-semibold leading-[1.08] tracking-[-0.025em] text-[#17354d] [font-family:var(--font-display)] sm:text-[1.62rem]">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#8f1d2c]">{t("faq.badge")}</p>
+            <h2 className="mt-3 max-w-4xl text-[1.3rem] font-semibold leading-[1.08] tracking-[-0.025em] text-[#4a0d16] [font-family:var(--font-display)] sm:text-[1.62rem]">
               {t("faq.title")}
             </h2>
           </div>
@@ -721,7 +721,7 @@ export function HomePage() {
                       <span className="text-[1.1rem] font-bold leading-8 tracking-[-0.02em] text-slate-950">
                         {item.id}. {item.question}
                       </span>
-                      <span className="pt-1 text-2xl font-light text-[#25567a]">{active ? "-" : "+"}</span>
+                      <span className="pt-1 text-2xl font-light text-[#8f1d2c]">{active ? "-" : "+"}</span>
                     </button>
                     {active ? (
                       <div className="border-t border-slate-100 px-6 pb-6 pt-2">
@@ -734,7 +734,7 @@ export function HomePage() {
             </div>
 
             <div className="rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-panel lg:p-7">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#25567a]">{t("faq.enquiry")}</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#8f1d2c]">{t("faq.enquiry")}</p>
               <p className="mt-2 text-[1rem] leading-7 text-slate-600">
                 {t("faq.enquiryDescription")}
               </p>
@@ -745,7 +745,7 @@ export function HomePage() {
                   <input
                     type="text"
                     placeholder="Your full name"
-                    className="w-full rounded-xl border border-[#8fa5c7] bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#25567a]"
+                    className="w-full rounded-xl border border-[#d4a1aa] bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
                   />
                 </label>
 
@@ -754,7 +754,7 @@ export function HomePage() {
                   <input
                     type="email"
                     placeholder="Enter your email ID"
-                    className="w-full rounded-xl border border-[#8fa5c7] bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#25567a]"
+                    className="w-full rounded-xl border border-[#d4a1aa] bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
                   />
                 </label>
 
@@ -763,13 +763,13 @@ export function HomePage() {
                   <input
                     type="tel"
                     placeholder="Enter your Phone Number"
-                    className="w-full rounded-xl border border-[#8fa5c7] bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#25567a]"
+                    className="w-full rounded-xl border border-[#d4a1aa] bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
                   />
                 </label>
 
                 <label className="block">
                   <span className="mb-2 block text-sm font-semibold text-slate-800">City*</span>
-                  <select className="w-full rounded-xl border border-[#8fa5c7] bg-white px-4 py-3 text-slate-700 outline-none transition focus:border-[#25567a]">
+                  <select className="w-full rounded-xl border border-[#d4a1aa] bg-white px-4 py-3 text-slate-700 outline-none transition focus:border-[#8f1d2c]">
                     <option>--Please choose an option--</option>
                     <option>Delhi</option>
                     <option>Mumbai</option>
@@ -781,7 +781,7 @@ export function HomePage() {
 
                 <button
                   type="submit"
-                  className="w-full rounded-xl bg-[#25567a] px-6 py-3.5 text-[1rem] font-semibold text-white transition hover:bg-[#17354d]"
+                  className="w-full rounded-xl bg-[#8f1d2c] px-6 py-3.5 text-[1rem] font-semibold text-white transition hover:bg-[#4a0d16]"
                 >
                   {t("faq.submit")}
                 </button>
@@ -795,7 +795,7 @@ export function HomePage() {
         <div className="mx-auto max-w-7xl px-4 py-14 lg:px-8 lg:py-16">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#25567a]">Customer Trust</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8f1d2c]">Customer Trust</p>
               <h2 className="mt-4 text-[1.3rem] font-semibold tracking-[-0.025em] text-slate-950 [font-family:var(--font-display)] sm:text-[1.62rem]">
                 Trusted by customers who rely on timely pricing, market visibility, and business support
               </h2>
@@ -817,7 +817,7 @@ export function HomePage() {
                 key={label}
                 className="rounded-[1.75rem] border border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)] p-6 shadow-sm"
               >
-                <p className="text-[1.3rem] font-semibold tracking-[-0.025em] text-[#25567a] [font-family:var(--font-display)]">{value}</p>
+                <p className="text-[1.3rem] font-semibold tracking-[-0.025em] text-[#8f1d2c] [font-family:var(--font-display)]">{value}</p>
                 <p className="mt-3 text-[1rem] font-semibold text-slate-700">{label}</p>
               </div>
             ))}
@@ -826,7 +826,7 @@ export function HomePage() {
           <div className="mt-10 overflow-hidden rounded-[2rem] border border-slate-200 bg-[linear-gradient(180deg,#f7fbff_0%,#eef4fb_100%)] p-6 shadow-panel">
             <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#25567a]">Reviews & Feedback</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8f1d2c]">Reviews & Feedback</p>
                 <h3 className="mt-3 text-3xl font-extrabold tracking-[-0.03em] text-slate-950">
                   What customers say about Steel Baba
                 </h3>
@@ -942,12 +942,12 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[linear-gradient(135deg,#031226_0%,#0b2d57_48%,#0f5eaf_100%)]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(56,189,248,0.16),transparent_24%)]" />
+      <section className="relative overflow-hidden bg-[linear-gradient(135deg,#2d0910_0%,#5f1320_48%,#8f1d2c_100%)]">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(196,90,104,0.18),transparent_24%)]" />
         <div className="relative mx-auto max-w-7xl px-4 py-14 lg:px-8 lg:py-16">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-cyan-300">Featured Highlights</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-rose-200">Featured Highlights</p>
               <h2 className="mt-4 text-[1.3rem] font-semibold tracking-[-0.025em] text-white [font-family:var(--font-display)] sm:text-[1.62rem]">
                 Market updates, premium services, and customer-focused offers in one moving showcase
               </h2>
@@ -967,7 +967,7 @@ export function HomePage() {
                 {
                   title: "Premium Steel Alerts",
                   text: "Get instant steel and raw material price changes delivered through dashboard, WhatsApp, and text message.",
-                  tone: "from-cyan-500 to-blue-600"
+                  tone: "from-rose-600 to-red-800"
                 },
                 {
                   title: "Daily Market Intelligence",
@@ -994,7 +994,7 @@ export function HomePage() {
                   {
                     title: "Premium Steel Alerts",
                     text: "Get instant steel and raw material price changes delivered through dashboard, WhatsApp, and text message.",
-                    tone: "from-cyan-500 to-blue-600"
+                  tone: "from-rose-600 to-red-800"
                   },
                   {
                     title: "Daily Market Intelligence",
@@ -1031,7 +1031,7 @@ export function HomePage() {
                       <span className="rounded-full border border-white/15 px-3 py-1 text-xs font-semibold text-white/80">
                         Steel Baba
                       </span>
-                      <Link href="/contact" className="text-sm font-semibold text-cyan-300 transition hover:text-cyan-200">
+                      <Link href="/contact" className="text-sm font-semibold text-rose-200 transition hover:text-rose-100">
                         Explore More
                       </Link>
                     </div>

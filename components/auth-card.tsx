@@ -22,7 +22,7 @@ export function AuthCard({ type }: AuthCardProps) {
 
   return (
     <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_30px_70px_rgba(148,163,184,0.18)] lg:p-10">
-      <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#0859a5]">
+      <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8f1d2c]">
         {type === "login" ? t("header.login") : t("auth.createAccount")}
       </p>
       <h1 className="mt-4 text-[1.3rem] font-semibold tracking-[-0.025em] text-slate-950 [font-family:var(--font-display)]">
@@ -46,8 +46,8 @@ export function AuthCard({ type }: AuthCardProps) {
                 onClick={() => setMode(item)}
                 className={
                   active
-                    ? "rounded-full bg-[#0859a5] px-4 py-2.5 text-sm font-semibold text-white"
-                    : "rounded-full border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                    ? "rounded-full bg-[#8f1d2c] px-4 py-2.5 text-sm font-semibold text-white"
+                    : "rounded-full border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                 }
               >
                 {item === "email"
@@ -69,7 +69,7 @@ export function AuthCard({ type }: AuthCardProps) {
               <input
                 type="text"
                 placeholder="Enter your full name"
-                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
               />
             </label>
 
@@ -78,13 +78,13 @@ export function AuthCard({ type }: AuthCardProps) {
               <input
                 type="tel"
                 placeholder="Enter your mobile number"
-                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
               />
             </label>
 
             <label className="block">
               <span className="mb-2 block text-sm font-semibold text-slate-800">{t("auth.businessType")}</span>
-              <select className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]">
+              <select className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]">
                 <option>Select business category</option>
                 <option>Dealer</option>
                 <option>Manufacturer</option>
@@ -103,7 +103,7 @@ export function AuthCard({ type }: AuthCardProps) {
               <input
                 type="text"
                 placeholder="Enter your business or firm name"
-                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
               />
             </label>
 
@@ -112,7 +112,7 @@ export function AuthCard({ type }: AuthCardProps) {
               <textarea
                 placeholder="Enter your complete business address"
                 rows={4}
-                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
               />
             </label>
           </>
@@ -126,7 +126,7 @@ export function AuthCard({ type }: AuthCardProps) {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
             />
           </label>
         ) : null}
@@ -137,7 +137,7 @@ export function AuthCard({ type }: AuthCardProps) {
             <input
               type="tel"
               placeholder="Enter your mobile number"
-              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
             />
           </label>
         ) : null}
@@ -149,7 +149,7 @@ export function AuthCard({ type }: AuthCardProps) {
               <input
                 type="text"
                 placeholder="Enter your email or mobile number"
-                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
               />
             </label>
             <label className="block">
@@ -157,7 +157,7 @@ export function AuthCard({ type }: AuthCardProps) {
               <input
                 type="password"
                 placeholder="Enter your password"
-                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+                className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
               />
             </label>
           </>
@@ -169,7 +169,7 @@ export function AuthCard({ type }: AuthCardProps) {
             <input
               type="password"
               placeholder="Create a secure password"
-              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
             />
           </label>
         ) : null}
@@ -180,7 +180,7 @@ export function AuthCard({ type }: AuthCardProps) {
             <input
               type="text"
               placeholder={type === "login" ? "Enter OTP received on mobile" : "Enter OTP to verify mobile number"}
-              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+              className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
             />
           </label>
         ) : null}
@@ -191,7 +191,7 @@ export function AuthCard({ type }: AuthCardProps) {
               <input type="checkbox" className="rounded border-slate-300" />
               <span>{t("auth.rememberMe")}</span>
             </label>
-            <Link href="/forgot-password" className="font-semibold text-[#0859a5] transition hover:text-[#063f76]">
+            <Link href="/forgot-password" className="font-semibold text-[#8f1d2c] transition hover:text-[#5b1925]">
               {t("auth.forgotPassword")}
             </Link>
           </div>
@@ -199,7 +199,7 @@ export function AuthCard({ type }: AuthCardProps) {
 
         <button
           type="submit"
-          className="w-full rounded-xl bg-[#0859a5] px-6 py-3.5 text-[1rem] font-semibold text-white transition hover:bg-[#074b8a]"
+          className="w-full rounded-xl bg-[#8f1d2c] px-6 py-3.5 text-[1rem] font-semibold text-white transition hover:bg-[#5b1925]"
         >
           {type === "login"
             ? mode === "mobile"
@@ -215,14 +215,14 @@ export function AuthCard({ type }: AuthCardProps) {
         {type === "login" ? (
           <p>
             {t("auth.newToBalaji")}{" "}
-            <Link href="/signup" className="font-semibold text-[#0859a5]">
+            <Link href="/signup" className="font-semibold text-[#8f1d2c]">
               {t("auth.createAccount")}
             </Link>
           </p>
         ) : (
           <p>
             {t("auth.alreadyAccount")}{" "}
-            <Link href="/login" className="font-semibold text-[#0859a5]">
+            <Link href="/login" className="font-semibold text-[#8f1d2c]">
               {t("header.login")}
             </Link>
           </p>

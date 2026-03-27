@@ -5,7 +5,7 @@ export default function ContactPage() {
     <SiteShell>
       <main className="mx-auto max-w-5xl px-4 py-16 lg:px-8">
         <div className="rounded-[2rem] bg-white p-8 shadow-xl ring-1 ring-slate-200">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-teal-700">Contact Us</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8f1d2c]">Contact Us</p>
           <h1 className="mt-4 text-4xl font-bold text-slate-950">Speak with the Steel Baba team.</h1>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <div className="rounded-3xl bg-slate-50 p-6">
