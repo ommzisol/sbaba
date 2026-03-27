@@ -199,7 +199,7 @@ function ApplicationTable({
               <td className="px-6 py-5">
                 <Link
                   href="/contact"
-                  className="inline-flex rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#0859a5]"
+                  className="inline-flex rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#8f1d2c]"
                 >
                   {info.cta}
                 </Link>
@@ -215,11 +215,11 @@ function ApplicationTable({
 export default function ApplicationsPage() {
   return (
     <SiteShell>
-      <main className="bg-[linear-gradient(180deg,#edf4fc_0%,#ffffff_100%)]">
+      <main className="bg-[linear-gradient(180deg,#f7eff1_0%,#ffffff_100%)]">
         <section className="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-20">
           <div className="rounded-[2.3rem] border border-slate-200 bg-white p-8 shadow-[0_28px_70px_rgba(148,163,184,0.16)] lg:p-10">
             <div className="max-w-5xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#0859a5]">Applications</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8f1d2c]">Applications</p>
               <h1 className="mt-4 text-[1.32rem] font-semibold leading-tight tracking-[-0.025em] text-slate-950 [font-family:var(--font-display)] lg:text-[2.04rem]">
                 Steel Baba applications for Android, iOS, and Windows with full platform details
               </h1>
@@ -231,9 +231,9 @@ export default function ApplicationsPage() {
             </div>
 
             <div className="mt-10 grid gap-6">
-              <ApplicationTable kind="android" info={applications.android} tone="from-emerald-500 to-teal-600" />
-              <ApplicationTable kind="ios" info={applications.ios} tone="from-sky-500 to-blue-600" />
-              <ApplicationTable kind="windows" info={applications.windows} tone="from-violet-500 to-indigo-600" />
+              <ApplicationTable kind="android" info={applications.android} tone="from-[#7a1826] to-[#a92f40]" />
+              <ApplicationTable kind="ios" info={applications.ios} tone="from-[#8f1d2c] to-[#c45a68]" />
+              <ApplicationTable kind="windows" info={applications.windows} tone="from-[#4a0d16] to-[#8f1d2c]" />
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -242,7 +242,7 @@ export default function ApplicationsPage() {
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                className="inline-flex rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
               >
                 Contact for Application Demo
               </Link>

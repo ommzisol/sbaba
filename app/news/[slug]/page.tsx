@@ -28,7 +28,7 @@ export default async function NewsStoryPage({ params }: NewsPageProps) {
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
             <article className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-panel lg:p-8">
               <div className="flex flex-wrap items-center gap-3">
-                <span className="rounded-full bg-[#0859a5]/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.24em] text-[#0859a5]">
+                <span className="rounded-full bg-[#8f1d2c]/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.24em] text-[#8f1d2c]">
                   {story.category}
                 </span>
                 <span
@@ -54,7 +54,7 @@ export default async function NewsStoryPage({ params }: NewsPageProps) {
                 <span>{story.time}</span>
               </div>
 
-              <div className="mt-8 rounded-[1.75rem] bg-[linear-gradient(135deg,#0859a5_0%,#1d4f91_100%)] p-6 text-white">
+              <div className="mt-8 rounded-[1.75rem] bg-[linear-gradient(135deg,#4a0d16_0%,#8f1d2c_100%)] p-6 text-white">
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/80">Story Summary</p>
                 <p className="mt-3 text-xl leading-8 text-white/95">{story.summary}</p>
               </div>
@@ -70,11 +70,11 @@ export default async function NewsStoryPage({ params }: NewsPageProps) {
                   title={story.title}
                   text={story.summary}
                   url={`/news/${story.slug}`}
-                  className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                  className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                 />
                 <button
                   type="button"
-                  className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                  className="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                 >
                   Comment {story.comments}
                 </button>
@@ -93,7 +93,7 @@ export default async function NewsStoryPage({ params }: NewsPageProps) {
               </div>
 
               <div className="mt-8">
-                <Link href="/" className="font-semibold text-[#0859a5] transition hover:text-[#063f76]">
+                <Link href="/" className="font-semibold text-[#8f1d2c] transition hover:text-[#5b1925]">
                   Back to homepage
                 </Link>
               </div>
@@ -115,7 +115,7 @@ export default async function NewsStoryPage({ params }: NewsPageProps) {
               </div>
 
               <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-panel">
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0859a5]">Related Stories</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">Related Stories</p>
                 <div className="mt-5 space-y-5">
                   {relatedStories.map((item) => (
                     <article key={item.slug} className="border-b border-slate-200 pb-5 last:border-b-0 last:pb-0">
@@ -123,7 +123,7 @@ export default async function NewsStoryPage({ params }: NewsPageProps) {
                       <h3 className="mt-2 text-lg font-extrabold leading-snug text-slate-950">{item.title}</h3>
                       <Link
                         href={`/news/${item.slug}`}
-                        className="mt-3 inline-flex text-sm font-semibold text-[#0859a5] transition hover:text-[#063f76]"
+                        className="mt-3 inline-flex text-sm font-semibold text-[#8f1d2c] transition hover:text-[#5b1925]"
                       >
                         Read full story
                       </Link>

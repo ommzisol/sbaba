@@ -5,8 +5,8 @@ function SegmentVisual() {
   return (
     <div className="relative overflow-hidden rounded-[2rem] bg-[linear-gradient(135deg,#0f172a_0%,#1d4f91_55%,#4aa4ff_100%)] p-6 text-white shadow-[0_30px_70px_rgba(15,23,42,0.26)]">
       <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10 blur-2xl" />
-      <div className="absolute bottom-0 left-0 h-36 w-36 rounded-full bg-cyan-300/10 blur-2xl" />
-      <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-200">Market Flow</p>
+      <div className="absolute bottom-0 left-0 h-36 w-36 rounded-full bg-rose-300/10 blur-2xl" />
+      <p className="text-sm font-semibold uppercase tracking-[0.3em] text-rose-200">Market Flow</p>
       <h2 className="mt-4 text-3xl font-extrabold tracking-[-0.03em]">How segments move through the market</h2>
 
       <div className="mt-8 grid gap-4">
@@ -41,7 +41,7 @@ export default function SegmentsPage() {
         <section className="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#0859a5]">Segments</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#8f1d2c]">Segments</p>
               <h1 className="mt-4 max-w-4xl text-[1.32rem] font-semibold leading-tight tracking-[-0.025em] text-slate-950 [font-family:var(--font-display)] lg:text-[2.04rem]">
                 Understanding how market segments work in steel and commodity pricing
               </h1>

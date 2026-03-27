@@ -88,7 +88,7 @@ export default function ServicePage() {
         <section className="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-20">
           <div className="rounded-[2.3rem] border border-slate-200 bg-white p-8 shadow-[0_28px_70px_rgba(148,163,184,0.16)] lg:p-10">
             <div className="max-w-5xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#0859a5]">Service</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8f1d2c]">Service</p>
               <h1 className="mt-4 text-[1.32rem] font-semibold leading-tight tracking-[-0.025em] text-slate-950 [font-family:var(--font-display)] lg:text-[2.04rem]">
                 Service channels for products, items, and market updates with customer benefits and buying support
               </h1>
@@ -108,7 +108,7 @@ export default function ServicePage() {
                     agriculture, and exchange-linked markets.
                   </p>
                 </div>
-                <div className="rounded-full bg-[#0859a5]/10 px-4 py-2 text-sm font-semibold text-[#0859a5]">
+                <div className="rounded-full bg-[#8f1d2c]/10 px-4 py-2 text-sm font-semibold text-[#8f1d2c]">
                   {allProducts.length} items covered
                 </div>
               </div>
@@ -198,12 +198,12 @@ export default function ServicePage() {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link href="/request-demo" className="inline-flex rounded-full bg-slate-950 px-6 py-3 font-semibold text-white transition hover:bg-[#0859a5]">
+              <Link href="/request-demo" className="inline-flex rounded-full bg-slate-950 px-6 py-3 font-semibold text-white transition hover:bg-[#8f1d2c]">
                 Request Service Demo
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                className="inline-flex rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
               >
                 Contact to Buy Package
               </Link>

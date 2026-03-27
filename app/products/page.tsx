@@ -364,7 +364,7 @@ export default function ProductsPage() {
           <div className="rounded-[2.25rem] border border-slate-200 bg-white p-8 shadow-[0_30px_70px_rgba(148,163,184,0.16)] lg:p-12">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-4xl">
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#0859a5]">Products</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#8f1d2c]">Products</p>
                 <h1 className="mt-4 text-[1.32rem] font-semibold leading-tight tracking-[-0.025em] text-slate-950 [font-family:var(--font-display)] lg:text-[2.04rem]">
                   Complete product coverage across steel, metal, raw material, agriculture, and exchange markets
                 </h1>
@@ -376,7 +376,7 @@ export default function ProductsPage() {
                 </p>
               </div>
 
-              <div className="rounded-[1.75rem] bg-[linear-gradient(135deg,#0859a5_0%,#1e40af_100%)] px-6 py-5 text-white shadow-lg">
+              <div className="rounded-[1.75rem] bg-[linear-gradient(135deg,#4a0d16_0%,#8f1d2c_100%)] px-6 py-5 text-white shadow-lg">
                 <p className="text-sm uppercase tracking-[0.22em] text-white/80">Catalog Size</p>
                 <p className="mt-2 text-[1.3rem] font-semibold [font-family:var(--font-display)]">{totalItems}+</p>
                 <p className="mt-2 text-sm text-white/80">Tracked item names across major market segments</p>
@@ -394,7 +394,7 @@ export default function ProductsPage() {
                       <h2 className="text-2xl font-extrabold tracking-[-0.03em] text-slate-950">{section.title}</h2>
                       <p className="mt-2 max-w-4xl text-[1rem] leading-8 text-slate-600">{section.description}</p>
                     </div>
-                    <div className="rounded-full bg-[#0859a5]/10 px-4 py-2 text-sm font-semibold text-[#0859a5]">
+                    <div className="rounded-full bg-[#8f1d2c]/10 px-4 py-2 text-sm font-semibold text-[#8f1d2c]">
                       {section.items.length} items
                     </div>
                   </div>
@@ -425,7 +425,7 @@ export default function ProductsPage() {
                     and distributor networks.
                   </p>
                 </div>
-                <div className="rounded-full bg-[#0859a5]/10 px-4 py-2 text-sm font-semibold text-[#0859a5]">
+                <div className="rounded-full bg-[#8f1d2c]/10 px-4 py-2 text-sm font-semibold text-[#8f1d2c]">
                   {majorCities.length} major cities
                 </div>
               </div>
@@ -451,7 +451,7 @@ export default function ProductsPage() {
                     metal, raw material, and commodity market activity is concentrated across India.
                   </p>
                 </div>
-                <div className="rounded-full bg-[#0859a5]/10 px-4 py-2 text-sm font-semibold text-[#0859a5]">
+                <div className="rounded-full bg-[#8f1d2c]/10 px-4 py-2 text-sm font-semibold text-[#8f1d2c]">
                   {statewiseMarkets.length} states covered
                 </div>
               </div>
@@ -500,7 +500,7 @@ export default function ProductsPage() {
           <div className="relative mx-auto max-w-7xl px-4 py-14 lg:px-8 lg:py-16">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-3xl">
-                <p className="text-sm font-semibold uppercase tracking-[0.32em] text-cyan-300">Product Highlights</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.32em] text-rose-200">Product Highlights</p>
                 <h2 className="mt-4 text-[1.3rem] font-semibold tracking-[-0.025em] text-white [font-family:var(--font-display)] sm:text-[1.62rem]">
                   Explore product coverage, segment intelligence, and premium market access in one showcase
                 </h2>
@@ -520,12 +520,12 @@ export default function ProductsPage() {
                   {
                     title: "Iron and Steel Coverage",
                     text: "Track a broad list of steel products including TMT, rebar, coils, pipes, plates, rods, and structural segments.",
-                    tone: "from-cyan-500 to-blue-600"
+                    tone: "from-rose-600 to-red-800"
                   },
                   {
                     title: "Metal Market Tracking",
                     text: "Follow aluminium, copper, zinc, nickel, tin, brass, lead, and industrial metal-linked movement from one place.",
-                    tone: "from-emerald-500 to-teal-600"
+                    tone: "from-[#7a1826] to-[#a92f40]"
                   },
                   {
                     title: "Raw Material Visibility",
@@ -540,19 +540,19 @@ export default function ProductsPage() {
                   {
                     title: "MCX, NCDEX and LME References",
                     text: "Stay connected to futures and benchmark-linked products across steel, metals, and commodity exchanges.",
-                    tone: "from-violet-500 to-indigo-600"
+                    tone: "from-[#4a0d16] to-[#8f1d2c]"
                   }
                 ]
                   .concat([
                     {
                       title: "Iron and Steel Coverage",
                       text: "Track a broad list of steel products including TMT, rebar, coils, pipes, plates, rods, and structural segments.",
-                      tone: "from-cyan-500 to-blue-600"
+                      tone: "from-rose-600 to-red-800"
                     },
                     {
                       title: "Metal Market Tracking",
                       text: "Follow aluminium, copper, zinc, nickel, tin, brass, lead, and industrial metal-linked movement from one place.",
-                      tone: "from-emerald-500 to-teal-600"
+                      tone: "from-[#7a1826] to-[#a92f40]"
                     },
                     {
                       title: "Raw Material Visibility",
@@ -567,7 +567,7 @@ export default function ProductsPage() {
                     {
                       title: "MCX, NCDEX and LME References",
                       text: "Stay connected to futures and benchmark-linked products across steel, metals, and commodity exchanges.",
-                      tone: "from-violet-500 to-indigo-600"
+                      tone: "from-[#4a0d16] to-[#8f1d2c]"
                     }
                   ])
                   .map((card, index) => (
@@ -584,7 +584,7 @@ export default function ProductsPage() {
                         <span className="rounded-full border border-white/15 px-3 py-1 text-xs font-semibold text-white/80">
                           Steel Baba
                         </span>
-                        <Link href="/contact" className="text-sm font-semibold text-cyan-300 transition hover:text-cyan-200">
+                        <Link href="/contact" className="text-sm font-semibold text-rose-200 transition hover:text-rose-100">
                           Explore More
                         </Link>
                       </div>

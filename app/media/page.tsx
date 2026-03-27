@@ -57,7 +57,7 @@ const systemVideos: VideoCard[] = [
     summary:
       "An internal platform walkthrough showing category navigation, item selection, news sections, and market trend visibility.",
     category: "System Demo",
-    tone: "from-sky-500 to-blue-600",
+    tone: "from-[#8f1d2c] to-[#c45a68]",
     source: "System Video"
   },
   {
@@ -68,7 +68,7 @@ const systemVideos: VideoCard[] = [
     summary:
       "This system video explains mobile and desktop application features, notifications, and customer engagement tools.",
     category: "Applications",
-    tone: "from-emerald-500 to-teal-600",
+    tone: "from-[#7a1826] to-[#a92f40]",
     source: "System Video"
   },
   {
@@ -79,7 +79,7 @@ const systemVideos: VideoCard[] = [
     summary:
       "A structured system video for users who want to understand category filtering, rate tables, and comparison-based usage.",
     category: "Product Experience",
-    tone: "from-violet-500 to-indigo-600",
+    tone: "from-[#4a0d16] to-[#8f1d2c]",
     source: "System Video"
   }
 ];
@@ -108,7 +108,7 @@ function VideoShowcase({
           <h2 className="text-3xl font-extrabold tracking-[-0.03em] text-slate-950">{sectionTitle}</h2>
           <p className="mt-3 text-[1rem] leading-8 text-slate-600">{sectionSubtitle}</p>
         </div>
-        <div className="rounded-full bg-[#0859a5]/10 px-4 py-2 text-sm font-semibold text-[#0859a5]">
+        <div className="rounded-full bg-[#8f1d2c]/10 px-4 py-2 text-sm font-semibold text-[#8f1d2c]">
           {videos.length} videos
         </div>
       </div>
@@ -143,11 +143,11 @@ function VideoShowcase({
                 </span>
               </div>
               <h3 className="mt-4 text-2xl font-extrabold tracking-[-0.03em] text-slate-950">{video.title}</h3>
-              <p className="mt-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#0859a5]">{video.tagline}</p>
+              <p className="mt-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#8f1d2c]">{video.tagline}</p>
               <p className="mt-4 text-[0.98rem] leading-8 text-slate-600">{video.summary}</p>
               <div className="mt-6 flex items-center justify-between gap-3">
                 <span className="text-sm font-semibold text-slate-500">{video.source} Library</span>
-                <Link href="/contact" className="text-sm font-semibold text-[#0859a5] transition hover:text-[#063d74]">
+                <Link href="/contact" className="text-sm font-semibold text-[#8f1d2c] transition hover:text-[#5b1925]">
                   Request full media access
                 </Link>
               </div>
@@ -162,11 +162,11 @@ function VideoShowcase({
 export default function MediaPage() {
   return (
     <SiteShell>
-      <main className="bg-[linear-gradient(180deg,#edf4fc_0%,#ffffff_100%)]">
+      <main className="bg-[linear-gradient(180deg,#f7eff1_0%,#ffffff_100%)]">
         <section className="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-20">
           <div className="rounded-[2.3rem] border border-slate-200 bg-white p-8 shadow-[0_28px_70px_rgba(148,163,184,0.16)] lg:p-10">
             <div className="max-w-5xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#0859a5]">Media</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8f1d2c]">Media</p>
               <h1 className="mt-4 text-[1.32rem] font-semibold leading-tight tracking-[-0.025em] text-slate-950 [font-family:var(--font-display)] lg:text-[2.04rem]">
                 Dedicated media page for YouTube videos and Steel Baba system videos
               </h1>
@@ -197,7 +197,7 @@ export default function MediaPage() {
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                className="inline-flex rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
               >
                 Contact for Media Collaboration
               </Link>

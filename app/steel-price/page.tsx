@@ -204,7 +204,7 @@ export default function SteelPricePage() {
             <div className="grid gap-0 lg:grid-cols-[20rem_1fr]">
               <aside className="border-r border-slate-200 bg-[linear-gradient(180deg,#f7fbff_0%,#edf4fb_100%)] p-5 lg:p-6">
                 <div className="rounded-[1.6rem] bg-white p-4 shadow-sm ring-1 ring-slate-200">
-                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#0859a5]">Category Panel</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#8f1d2c]">Category Panel</p>
                   <h2 className="mt-2 text-xl font-extrabold tracking-[-0.03em] text-slate-950">Select Market Category</h2>
                   <div className="mt-4 grid gap-3">
                     {categories.map((category) => {
@@ -216,7 +216,7 @@ export default function SteelPricePage() {
                         <div
                           key={category}
                           className={`overflow-hidden rounded-2xl border ${
-                            active ? "border-[#0859a5]/30 bg-[#f4f9ff]" : "border-slate-200 bg-white"
+                            active ? "border-[#8f1d2c]/30 bg-[#fbf1f3]" : "border-slate-200 bg-white"
                           }`}
                         >
                           <div className="flex items-center gap-2 p-2">
@@ -230,8 +230,8 @@ export default function SteelPricePage() {
                               }}
                               className={
                                 active
-                                  ? "flex-1 rounded-xl bg-[#0859a5] px-4 py-3 text-left text-sm font-semibold text-white shadow-sm"
-                                  : "flex-1 rounded-xl bg-slate-50 px-4 py-3 text-left text-sm font-semibold text-slate-700 transition hover:bg-slate-100 hover:text-[#0859a5]"
+                                  ? "flex-1 rounded-xl bg-[#8f1d2c] px-4 py-3 text-left text-sm font-semibold text-white shadow-sm"
+                                  : "flex-1 rounded-xl bg-slate-50 px-4 py-3 text-left text-sm font-semibold text-slate-700 transition hover:bg-slate-100 hover:text-[#8f1d2c]"
                               }
                             >
                               {category}
@@ -248,7 +248,7 @@ export default function SteelPricePage() {
                                   setActiveItem(Object.keys(steelPriceData[category])[0]);
                                 }
                               }}
-                              className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-xl font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                              className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-xl font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                             >
                               {expanded ? "-" : "+"}
                             </button>
@@ -292,7 +292,7 @@ export default function SteelPricePage() {
                 <div className="rounded-[1.8rem] border border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)] p-5 shadow-sm">
                   <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
                     <div>
-                      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0859a5]">{activeCategory}</p>
+                      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">{activeCategory}</p>
                       <h2 className="mt-2 text-3xl font-extrabold tracking-[-0.03em] text-slate-950">{activeItem}</h2>
                       <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
                         This view shows selected item rates across active cities, including price movement, trend graph,
@@ -301,7 +301,7 @@ export default function SteelPricePage() {
                     </div>
                     <Link
                       href="/contact"
-                      className="inline-flex rounded-full border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]"
+                      className="inline-flex rounded-full border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]"
                     >
                       Request detailed rate access
                     </Link>
@@ -379,21 +379,21 @@ export default function SteelPricePage() {
 
                 <div className="mt-6 grid gap-4 lg:grid-cols-3">
                   <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
-                    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0859a5]">How it works</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">How it works</p>
                     <p className="mt-3 text-sm leading-7 text-slate-600">
                       First select a category, then choose an item from the list. The right-side panel updates instantly
                       with city-wise rates and visual trend movement.
                     </p>
                   </div>
                   <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
-                    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0859a5]">Rate status</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">Rate status</p>
                     <p className="mt-3 text-sm leading-7 text-slate-600">
                       The final column marks each row as Right or Wrong so users can quickly understand the latest
                       validation direction for that market rate.
                     </p>
                   </div>
                   <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
-                    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0859a5]">Business use</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">Business use</p>
                     <p className="mt-3 text-sm leading-7 text-slate-600">
                       This layout is useful for dealers, manufacturers, traders, and retailers who need daily product
                       comparison before planning purchase or sale activity.

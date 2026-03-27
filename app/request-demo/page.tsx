@@ -64,7 +64,7 @@ export default function RequestDemoPage() {
         <section className="mx-auto max-w-6xl px-4 py-16 lg:px-8 lg:py-20">
           <div className="rounded-[2.2rem] border border-slate-200 bg-white p-8 shadow-[0_28px_70px_rgba(148,163,184,0.16)] lg:p-10">
             <div className="max-w-4xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#0859a5]">Request for Demo</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-[#8f1d2c]">Request for Demo</p>
               <h1 className="mt-4 text-[1.32rem] font-semibold leading-tight tracking-[-0.025em] text-slate-950 [font-family:var(--font-display)] lg:text-[2rem]">
                 Book a Steel Baba product demo with mobile number, product selection, and service preference
               </h1>
@@ -85,7 +85,7 @@ export default function RequestDemoPage() {
                       value={mobileNumber}
                       onChange={(event) => setMobileNumber(event.target.value)}
                       placeholder="Enter your mobile number"
-                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
                     />
                   </label>
                 </div>
@@ -101,7 +101,7 @@ export default function RequestDemoPage() {
                     }}
                     className={`rounded-xl px-5 py-3 text-sm font-semibold transition ${
                       canOpenPopup
-                        ? "bg-[#0859a5] text-white hover:bg-[#074b8a]"
+                        ? "bg-[#8f1d2c] text-white hover:bg-[#5b1925]"
                         : "cursor-not-allowed bg-slate-200 text-slate-500"
                     }`}
                   >
@@ -120,7 +120,7 @@ export default function RequestDemoPage() {
                     <select
                       value={service}
                       onChange={(event) => setService(event.target.value)}
-                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#0859a5]"
+                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-[#8f1d2c]"
                     >
                       {serviceOptions.map((option) => (
                         <option key={option} value={option}>
@@ -133,7 +133,7 @@ export default function RequestDemoPage() {
 
                 <button
                   type="submit"
-                  className="rounded-xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#0859a5]"
+                  className="rounded-xl bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#8f1d2c]"
                 >
                   Submit Demo Request
                 </button>
@@ -146,7 +146,7 @@ export default function RequestDemoPage() {
               </div>
 
               <div className="rounded-[1.8rem] bg-[linear-gradient(135deg,#0b1527_0%,#1b3f73_100%)] p-6 text-white shadow-lg">
-                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-300">Demo Flow</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-rose-200">Demo Flow</p>
                 <div className="mt-6 space-y-4">
                   {[
                     "Enter customer mobile number",
@@ -156,13 +156,13 @@ export default function RequestDemoPage() {
                     "Submit final request for demo"
                   ].map((step, index) => (
                     <div key={step} className="rounded-2xl border border-white/10 bg-white/8 px-4 py-4">
-                      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Step {index + 1}</p>
+                      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-rose-100">Step {index + 1}</p>
                       <p className="mt-2 text-[0.98rem] leading-7 text-white/90">{step}</p>
                     </div>
                   ))}
                 </div>
                 <div className="mt-6 rounded-2xl border border-white/10 bg-white/8 px-4 py-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Current Selection</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-rose-100">Current Selection</p>
                   <p className="mt-2 text-sm text-white/90">Mobile: {mobileNumber || "Not entered"}</p>
                   <p className="mt-1 text-sm text-white/90">Products: {selectedProducts.length ? selectedSummary : "Not selected"}</p>
                   <p className="mt-1 text-sm text-white/90">Service: {service}</p>
@@ -171,7 +171,7 @@ export default function RequestDemoPage() {
             </form>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/" className="inline-flex rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:border-[#0859a5] hover:text-[#0859a5]">
+              <Link href="/" className="inline-flex rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:border-[#8f1d2c] hover:text-[#8f1d2c]">
                 Back to Home
               </Link>
             </div>
@@ -183,7 +183,7 @@ export default function RequestDemoPage() {
             <div className="w-full max-w-2xl rounded-[1.8rem] bg-white p-6 shadow-[0_28px_70px_rgba(15,23,42,0.28)]">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#0859a5]">Product Popup</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#8f1d2c]">Product Popup</p>
                   <h2 className="mt-2 text-2xl font-bold tracking-[-0.03em] text-slate-950">Select Demo Products</h2>
                 </div>
                 <button
@@ -204,7 +204,7 @@ export default function RequestDemoPage() {
                       key={product}
                       className={`flex items-center gap-3 rounded-2xl border px-4 py-3 text-sm font-medium transition ${
                         checked
-                          ? "border-[#0859a5] bg-[#eff6ff] text-[#0859a5]"
+                          ? "border-[#8f1d2c] bg-[#fbf1f3] text-[#8f1d2c]"
                           : "border-slate-200 bg-slate-50 text-slate-700"
                       }`}
                     >
@@ -212,7 +212,7 @@ export default function RequestDemoPage() {
                         type="checkbox"
                         checked={checked}
                         onChange={() => toggleProduct(product)}
-                        className="h-4 w-4 accent-[#0859a5]"
+                        className="h-4 w-4 accent-[#8f1d2c]"
                       />
                       <span>{product}</span>
                     </label>
@@ -229,7 +229,7 @@ export default function RequestDemoPage() {
                   onClick={handleProductSubmit}
                   className={`rounded-xl px-5 py-3 text-sm font-semibold transition ${
                     selectedProducts.length
-                      ? "bg-[#0859a5] text-white hover:bg-[#074b8a]"
+                      ? "bg-[#8f1d2c] text-white hover:bg-[#5b1925]"
                       : "cursor-not-allowed bg-slate-200 text-slate-500"
                   }`}
                 >
